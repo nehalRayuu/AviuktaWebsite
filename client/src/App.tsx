@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import Home from "@/pages/Home";
 import NotFound from "@/pages/not-found";
 import { useEffect } from "react";
+import { ABTestProvider } from "./context/ABTestContext";
 
 function Router() {
   // Scroll to top on route change
@@ -23,8 +24,10 @@ function Router() {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <Router />
-      <Toaster />
+      <ABTestProvider>
+        <Router />
+        <Toaster />
+      </ABTestProvider>
     </QueryClientProvider>
   );
 }

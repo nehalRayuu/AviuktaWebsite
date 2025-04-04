@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { ABTestComponent, useABTest } from '../context/ABTestContext';
 
 interface ServiceProps {
   icon: string;
@@ -8,6 +9,7 @@ interface ServiceProps {
   features: string[];
 }
 
+// Standard service card (Variation A)
 const ServiceCard = ({ icon, title, description, features }: ServiceProps) => {
   return (
     <div className="service-card bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-lg p-6 border border-purple-600 border-opacity-20 h-full">
@@ -33,9 +35,44 @@ const ServiceCard = ({ icon, title, description, features }: ServiceProps) => {
   );
 };
 
+// Alternative service card design (Variation B)
+const ServiceCardAlternative = ({ icon, title, description, features }: ServiceProps) => {
+  return (
+    <div className="service-card relative overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800 rounded-lg p-6 h-full border-l-4 border-purple-600 shadow-xl hover:shadow-purple-600/10 transition-all duration-300 hover:-translate-y-1">
+      <div className="absolute top-0 right-0 w-20 h-20 bg-purple-600 opacity-10 rounded-bl-full"></div>
+      <div className="flex items-center mb-6">
+        <div className="mr-4 text-purple-600 text-2xl">
+          <i className={`fas ${icon}`}></i>
+        </div>
+        <h3 className="text-xl font-bold font-heading">{title}</h3>
+      </div>
+      <p className="text-gray-300 mb-6 pl-2 border-l border-purple-600">
+        {description}
+      </p>
+      <div className="space-y-3 mb-6">
+        {features.map((feature, idx) => (
+          <div key={idx} className="flex items-center bg-gray-800 bg-opacity-50 p-2 rounded">
+            <i className="fas fa-check-circle text-purple-600 mr-2"></i>
+            <span className="text-gray-300 text-sm">{feature}</span>
+          </div>
+        ))}
+      </div>
+      <a href="#contact" className="inline-block px-6 py-2 bg-purple-600 bg-opacity-10 hover:bg-opacity-20 text-purple-600 rounded-full font-medium transition-colors">
+        Learn More <i className="fas fa-long-arrow-alt-right ml-1"></i>
+      </a>
+    </div>
+  );
+};
+
 const Services = () => {
   const sectionRef = useRef<HTMLElement>(null);
   useScrollAnimation(sectionRef);
+  const { recordConversion } = useABTest();
+
+  const handleServiceClick = () => {
+    // Record a conversion for the service layout test when a user interacts with it
+    recordConversion('serviceLayout');
+  };
 
   const services = [
     {
@@ -91,7 +128,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" ref={sectionRef} className="py-20 relative overflow-hidden">
+    <section id="services" ref={sectionRef} className="py-20 relative overflow-hidden" onClick={handleServiceClick}>
       <div className="gradient-bg absolute inset-0 opacity-30"></div>
       
       {/* Animated shapes */}
@@ -108,17 +145,36 @@ const Services = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <ServiceCard 
-              key={index}
-              icon={service.icon}
-              title={service.title}
-              description={service.description}
-              features={service.features}
-            />
-          ))}
-        </div>
+        {/* A/B Test for services layout */}
+        <ABTestComponent
+          testName="serviceLayout"
+          renderA={() => (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {services.map((service, index) => (
+                <ServiceCard 
+                  key={index}
+                  icon={service.icon}
+                  title={service.title}
+                  description={service.description}
+                  features={service.features}
+                />
+              ))}
+            </div>
+          )}
+          renderB={() => (
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+              {services.map((service, index) => (
+                <ServiceCardAlternative
+                  key={index}
+                  icon={service.icon}
+                  title={service.title}
+                  description={service.description}
+                  features={service.features}
+                />
+              ))}
+            </div>
+          )}
+        />
       </div>
     </section>
   );

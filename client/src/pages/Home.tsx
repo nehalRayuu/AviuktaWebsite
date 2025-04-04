@@ -9,15 +9,16 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import BackToTop from '@/components/BackToTop';
 import ParticleBackground from '@/components/ParticleBackground';
+import ABTestingDashboard from '@/components/ABTestingDashboard';
 import { Helmet } from 'react-helmet';
 
 const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Top Shopify & Shopify Plus Development Agency in India | Fashion eCommerce Experts</title>
-        <meta name="description" content="Looking to hire a Shopify expert from India? We specialize in fashion & lifestyle eCommerce design and development. Based in Mumbai, Delhi, Chennai & more." />
-        <meta name="keywords" content="Shopify, Shopify Plus, eCommerce, Development, Fashion, India" />
+        <title>Aviukta | Leading eCommerce Development Agency in India | Digital Commerce Experts</title>
+        <meta name="description" content="India's leading digital agency specializing in fashion and lifestyle eCommerce solutions. We craft cutting-edge digital experiences that transform brands. Based in Mumbai, Delhi, Chennai & Bangalore." />
+        <meta name="keywords" content="eCommerce, Digital Commerce, Development, Fashion, Lifestyle, India, UI/UX, Web Design" />
       </Helmet>
       
       <ParticleBackground />
@@ -28,6 +29,7 @@ const Home = () => {
       <Portfolio />
       <Testimonials />
       <Innovation />
+      <ABTestingDashboard />
       <Contact />
       <Footer />
       <BackToTop />
