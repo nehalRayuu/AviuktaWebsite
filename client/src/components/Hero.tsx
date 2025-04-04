@@ -61,24 +61,24 @@ const Hero = () => {
             testName="heroHeadline"
             renderA={() => (
               <h1 className="font-bold font-heading mb-6 relative" data-text="Aviukta">
-                <span className="relative inline-block text-4xl md:text-6xl lg:text-7xl animate-typewriter">Future of</span>
+                <span className="relative inline-block text-4xl md:text-6xl lg:text-7xl animate-typewriter">Innovation in</span>
                 <br />
-                <span className="text-purple-600 text-4xl md:text-6xl lg:text-7xl animate-typewriter animation-delay-1000">eCommerce</span>
-                <span className="animate-glitch animation-delay-3000 absolute top-0 left-0 right-0 text-blue-400 opacity-30">Future of eCommerce</span>
+                <span className="text-purple-600 text-4xl md:text-6xl lg:text-7xl animate-typewriter animation-delay-1000">Technology</span>
+                <span className="animate-glitch animation-delay-3000 absolute top-0 left-0 right-0 text-blue-400 opacity-30">Innovation in Technology</span>
               </h1>
             )}
             renderB={() => (
               <h1 className="font-bold font-heading mb-6 relative" data-text="Aviukta">
-                <span className="relative inline-block text-4xl md:text-6xl lg:text-7xl animate-fadeIn">Revolutionizing</span>
+                <span className="relative inline-block text-4xl md:text-6xl lg:text-7xl animate-fadeIn">Transforming</span>
                 <br />
-                <span className="text-purple-600 text-4xl md:text-6xl lg:text-7xl animate-scaleUp animation-delay-1000">Digital Commerce</span>
+                <span className="text-purple-600 text-4xl md:text-6xl lg:text-7xl animate-scaleUp animation-delay-1000">Digital Future</span>
                 <div className="h-1 w-40 bg-purple-600 mx-auto mt-5 animate-spotlight"></div>
               </h1>
             )}
           />
           
           <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto font-sans slide-in-from-bottom animation-delay-2000">
-            We craft cutting-edge digital experiences that transform your brand and elevate your online presence.
+            Creating next-generation solutions that redefine the boundaries of digital innovation.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10 slide-in-from-bottom animation-delay-3000">
