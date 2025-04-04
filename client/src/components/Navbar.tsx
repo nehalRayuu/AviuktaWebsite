@@ -31,9 +31,9 @@ const Navbar = () => {
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black/80' : 'bg-transparent'} backdrop-blur-sm border-b border-purple-600/20`}>
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/">
-          <a className="flex items-center cursor-pointer">
+          <div className="flex items-center cursor-pointer">
             <img src="/attached_assets/Aviukta_2.png" alt="Aviukta Logo" className="h-8 md:h-10" />
-          </a>
+          </div>
         </Link>
         
         {/* Desktop Navigation */}
