@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/">
           <div className="flex items-center cursor-pointer">
-            <img src="./attached_assets/Aviukta_2.png" alt="Aviukta Logo" className="h-8 md:h-10" />
+            <img src="/attached_assets/Aviukta_2.png" alt="Aviukta Logo" className="h-8 md:h-10" />
           </div>
         </Link>
         
