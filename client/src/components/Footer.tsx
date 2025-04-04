@@ -3,8 +3,8 @@ const Footer = () => {
 
   const footerLinks = {
     services: [
-      { name: "Shopify Development", href: "#services" },
-      { name: "Shopify Plus Development", href: "#services" },
+      { name: "eCommerce Development", href: "#services" },
+      { name: "Enterprise Solutions", href: "#services" },
       { name: "UI/UX Design", href: "#services" },
       { name: "Performance Optimization", href: "#services" },
       { name: "SEO & Marketing", href: "#services" }
@@ -50,9 +50,9 @@ const Footer = () => {
         {/* Footer Top with Logo and Newsletter */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-16 bg-purple-900/20 p-8 rounded-xl backdrop-blur-sm border border-purple-500/20">
           <div className="mb-8 md:mb-0">
-            <img src="/attached_assets/Aviukta_2.png" alt="Aviukta Logo" className="h-12 mb-4" />
+            <img src="./attached_assets/Aviukta_2.png" alt="Aviukta Logo" className="h-12 mb-4" />
             <p className="text-gray-300 max-w-md">
-              Transforming fashion and lifestyle brands with cutting-edge Shopify solutions. 
+              Transforming fashion and lifestyle brands with cutting-edge digital solutions. 
               Elevate your eCommerce experience with our innovative approach.
             </p>
           </div>
@@ -88,7 +88,7 @@ const Footer = () => {
               <span className="absolute -bottom-2 left-0 w-12 h-0.5 bg-purple-500"></span>
             </h4>
             <p className="text-gray-300 mb-6">
-              A forward-thinking Shopify development agency focused on creating exceptional eCommerce experiences for fashion and lifestyle brands.
+              A forward-thinking digital agency focused on creating exceptional eCommerce experiences for fashion and lifestyle brands.
             </p>
             <div className="flex space-x-4">
               {footerLinks.social.map((link, index) => (

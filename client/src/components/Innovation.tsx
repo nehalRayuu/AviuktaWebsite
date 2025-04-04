@@ -26,7 +26,7 @@ const innovationFeatures: InnovationFeature[] = [
   {
     icon: "fa-bolt",
     title: "High-Performance Optimization",
-    description: "We fine-tune every aspect of your Shopify store to ensure lightning-fast load times, smooth interactions, and exceptional performance on all devices."
+    description: "We fine-tune every aspect of your online store to ensure lightning-fast load times, smooth interactions, and exceptional performance on all devices."
   }
 ];
 

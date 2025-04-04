@@ -47,18 +47,18 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="backdrop-blur-sm bg-black bg-opacity-40 p-8 rounded-lg border border-purple-500/20">
             <h3 className="text-2xl md:text-3xl font-bold mb-6 text-white leading-tight">
-              A <span className="text-purple-500">New Vision</span> for Shopify Development 
+              A <span className="text-purple-500">New Vision</span> for Digital Experiences 
               <span className="inline-block ml-2 animate-pulse">
                 <i className="fas fa-rocket text-purple-500"></i>
               </span>
             </h3>
             
             <p className="text-gray-300 mb-6 text-lg">
-              Founded in 2023, Aviukta is a fresh, forward-thinking Shopify development agency with a mission to transform how fashion and lifestyle brands connect with their customers online.
+              Founded in 2023, Aviukta is a fresh, forward-thinking digital agency with a mission to transform how fashion and lifestyle brands connect with their customers online.
             </p>
             
             <p className="text-gray-300 mb-8">
-              We combine technical expertise with creative vision to build beautiful, high-converting eCommerce experiences. While we're new to the scene, our team brings together seasoned developers and designers ready to make your Shopify store stand out in a crowded marketplace.
+              We combine technical expertise with creative vision to build beautiful, high-converting eCommerce experiences. While we're new to the scene, our team brings together seasoned developers and designers ready to make your brand stand out in a crowded marketplace.
             </p>
             
             <div className="mt-8 flex flex-wrap">
@@ -78,7 +78,7 @@ const About = () => {
                 <div className="w-12 h-12 rounded-full bg-purple-600/20 flex items-center justify-center mr-4">
                   <i className="fas fa-store text-purple-500"></i>
                 </div>
-                <span className="text-gray-300">Shopify Specialized</span>
+                <span className="text-gray-300">eCommerce Specialized</span>
               </div>
               <div className="w-1/2 mb-6 flex items-center">
                 <div className="w-12 h-12 rounded-full bg-purple-600/20 flex items-center justify-center mr-4">

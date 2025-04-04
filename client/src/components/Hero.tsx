@@ -21,11 +21,6 @@ const Hero = () => {
     };
   }, []);
 
-  const techIcons = [
-    { name: "SHOPIFY", src: "https://cdn.worldvectorlogo.com/logos/shopify.svg", animClass: "animate-float" },
-    { name: "SHOPIFY PLUS", src: "https://upload.wikimedia.org/wikipedia/commons/e/e2/Shopify_Plus_logo.svg", animClass: "animate-pulse-slow" }
-  ];
-
   return (
     <section id="home" className="min-h-screen flex items-center relative overflow-hidden pt-20">
       <div className="gradient-bg absolute inset-0 opacity-50"></div>
@@ -39,12 +34,12 @@ const Hero = () => {
       <div className="container mx-auto px-4 z-10 py-20">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-heading mb-6 relative" data-text="Aviukta">
-            <span className="relative inline-block">Futuristic Shopify</span>
-            <span className="text-purple-600">Development</span>
+            <span className="relative inline-block">Future of</span>
+            <span className="text-purple-600"> eCommerce</span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto font-sans">
-            We craft cutting-edge eCommerce experiences with Shopify and Shopify Plus for fashion and lifestyle brands.
+            We craft cutting-edge digital experiences that transform your brand and elevate your online presence.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10">
@@ -54,16 +49,6 @@ const Hero = () => {
             <a href="#contact" className="px-8 py-4 bg-transparent border-2 border-white hover:border-purple-600 hover:text-purple-600 text-white font-bold rounded-md transition-all duration-300 transform hover:-translate-y-1 text-center">
               Get in Touch
             </a>
-          </div>
-          
-          {/* Tech icons with animation */}
-          <div className="flex justify-center gap-8 mt-16 items-center flex-wrap">
-            {techIcons.map((icon) => (
-              <div key={icon.name} className="flex flex-col items-center">
-                <img src={icon.src} alt={icon.name} className={`h-8 mb-2 ${icon.animClass}`} />
-                <span className="text-xs text-gray-400 font-tech">{icon.name}</span>
-              </div>
-            ))}
           </div>
           
           {/* Scroll indicator */}

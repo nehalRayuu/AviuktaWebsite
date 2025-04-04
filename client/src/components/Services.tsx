@@ -40,8 +40,8 @@ const Services = () => {
   const services = [
     {
       icon: "fa-shopping-cart",
-      title: "Shopify Store Development",
-      description: "Custom Shopify store development with responsive design, intuitive navigation, and seamless checkout experiences.",
+      title: "eCommerce Development",
+      description: "Custom online store development with responsive design, intuitive navigation, and seamless checkout experiences.",
       features: [
         "Custom theme development",
         "Mobile-optimized layouts",
@@ -50,11 +50,11 @@ const Services = () => {
     },
     {
       icon: "fa-crown",
-      title: "Shopify Plus Development",
-      description: "Enterprise-grade solutions leveraging Shopify Plus capabilities for high-volume merchants and complex business requirements.",
+      title: "Enterprise Solutions",
+      description: "Enterprise-grade solutions for high-volume merchants and complex business requirements with advanced features.",
       features: [
         "Custom checkout experiences",
-        "Script customization",
+        "Advanced integrations",
         "Multi-currency support"
       ]
     },
@@ -71,7 +71,7 @@ const Services = () => {
     {
       icon: "fa-rocket",
       title: "Performance Optimization",
-      description: "Speed up your Shopify store to improve user experience, SEO rankings, and conversion rates.",
+      description: "Speed up your online store to improve user experience, SEO rankings, and conversion rates.",
       features: [
         "Page speed optimization",
         "Code optimization",
@@ -104,7 +104,7 @@ const Services = () => {
             Our <span className="text-purple-600">Services</span>
           </h2>
           <p className="text-gray-300">
-            We offer comprehensive Shopify development solutions to elevate your brand's digital presence.
+            We offer comprehensive digital solutions to elevate your brand's online presence and drive business growth.
           </p>
         </div>
         
