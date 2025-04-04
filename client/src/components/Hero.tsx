@@ -23,9 +23,7 @@ const Hero = () => {
 
   const techIcons = [
     { name: "SHOPIFY", src: "https://cdn.worldvectorlogo.com/logos/shopify.svg", animClass: "animate-float" },
-    { name: "SHOPIFY PLUS", src: "https://cdn.worldvectorlogo.com/logos/shopify-plus.svg", animClass: "animate-pulse-slow" },
-    { name: "REACT", src: "https://cdn.worldvectorlogo.com/logos/react-2.svg", animClass: "animate-float" },
-    { name: "NODE.JS", src: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg", animClass: "animate-pulse-slow" }
+    { name: "SHOPIFY PLUS", src: "https://upload.wikimedia.org/wikipedia/commons/e/e2/Shopify_Plus_logo.svg", animClass: "animate-pulse-slow" }
   ];
 
   return (

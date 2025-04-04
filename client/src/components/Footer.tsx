@@ -6,7 +6,6 @@ const Footer = () => {
       { name: "Shopify Development", href: "#services" },
       { name: "Shopify Plus Development", href: "#services" },
       { name: "UI/UX Design", href: "#services" },
-      { name: "Custom Store Development", href: "#services" },
       { name: "Performance Optimization", href: "#services" },
       { name: "SEO & Marketing", href: "#services" }
     ],

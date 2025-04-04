@@ -69,16 +69,6 @@ const Services = () => {
       ]
     },
     {
-      icon: "fa-code",
-      title: "Custom App Development",
-      description: "Tailored Shopify apps and integrations built to address your specific business requirements.",
-      features: [
-        "Private apps",
-        "Third-party integrations",
-        "API development"
-      ]
-    },
-    {
       icon: "fa-rocket",
       title: "Performance Optimization",
       description: "Speed up your Shopify store to improve user experience, SEO rankings, and conversion rates.",
