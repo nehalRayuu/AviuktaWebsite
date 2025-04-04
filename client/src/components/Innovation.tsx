@@ -28,9 +28,9 @@ const Innovation = () => {
       description: "Our AI-driven recommendation engines analyze customer behavior to provide personalized product suggestions, enhancing user experience and increasing average order value."
     },
     {
-      icon: "fa-mobile-alt",
-      title: "Progressive Web Apps",
-      description: "We build progressive web applications that offer app-like experiences without the need for installation, improving performance and engagement on mobile devices."
+      icon: "fa-bolt",
+      title: "High-Performance Optimization",
+      description: "We fine-tune every aspect of your Shopify store to ensure lightning-fast load times, smooth interactions, and exceptional performance on all devices."
     }
   ];
 

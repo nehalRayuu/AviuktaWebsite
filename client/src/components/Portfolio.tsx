@@ -80,14 +80,26 @@ const Portfolio = () => {
         </div>
         
         {/* Project Filters */}
-        <div className="flex justify-center flex-wrap gap-2 mb-12">
+        <div className="flex justify-center flex-wrap gap-4 mb-12">
           {filters.map((filterName, index) => (
             <button
               key={index}
-              className={`px-6 py-2 rounded-full bg-gray-900 hover:bg-purple-600 transition-colors ${filter === filterName ? 'filter-active' : ''}`}
+              className={`
+                px-6 py-3 rounded-lg relative overflow-hidden group
+                ${filter === filterName 
+                  ? 'bg-purple-600 text-white shadow-lg shadow-purple-600/30' 
+                  : 'bg-gray-900 text-white hover:bg-gray-800'
+                }
+                transition-all duration-300 transform hover:-translate-y-1
+              `}
               onClick={() => setFilter(filterName)}
             >
-              {filterName}
+              <span className="relative z-10">{filterName}</span>
+              <span className={`
+                absolute inset-0 bg-gradient-to-r from-purple-600 to-purple-800 opacity-0 
+                group-hover:opacity-100 transition-opacity duration-300
+                ${filter === filterName ? 'opacity-100' : ''}
+              `}></span>
             </button>
           ))}
         </div>
