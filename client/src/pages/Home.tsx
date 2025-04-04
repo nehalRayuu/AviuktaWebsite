@@ -9,7 +9,6 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import BackToTop from '@/components/BackToTop';
 import ParticleBackground from '@/components/ParticleBackground';
-import ABTestingDashboard from '@/components/ABTestingDashboard';
 import { Helmet } from 'react-helmet';
 
 const Home = () => {
@@ -29,7 +28,6 @@ const Home = () => {
       <Portfolio />
       <Testimonials />
       <Innovation />
-      <ABTestingDashboard />
       <Contact />
       <Footer />
       <BackToTop />
