@@ -114,6 +114,11 @@
     from { width: 0; }
     to { width: 100%; }
   }
+  
+  @keyframes typeWriterFixed {
+    from { max-width: 0; }
+    to { max-width: 100%; }
+  }
 
   @keyframes blinking-cursor {
     from, to { border-color: transparent; }
@@ -162,6 +167,14 @@
     overflow: hidden;
     white-space: nowrap;
     animation: typewriter 4s steps(40, end) 1s 1 normal both;
+  }
+  
+  .animate-typewriter-fixed {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    max-width: 0;
+    animation: typeWriterFixed 4s steps(40, end) 1s 1 normal both;
   }
 
   .animate-spotlight {
