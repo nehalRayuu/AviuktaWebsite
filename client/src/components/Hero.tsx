@@ -1,6 +1,7 @@
+
 import { useEffect, useRef } from 'react';
 import { ABTestComponent, useABTest } from '../context/ABTestContext';
-import { ArrowRight, ChevronDown } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   const parallaxRef1 = useRef<HTMLDivElement>(null);
@@ -35,7 +36,6 @@ const Hero = () => {
     };
   }, []);
 
-  // Track conversion when user clicks CTA button
   const handleWorkButtonClick = () => {
     recordConversion('ctaButton');
   };
@@ -48,7 +48,6 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex items-center relative overflow-hidden pt-20">
       <div ref={parallaxBgRef} className="gradient-bg absolute inset-0 opacity-50 parallax-layer-back"></div>
       
-      {/* Animated shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <div ref={parallaxRef1} className="parallax absolute w-64 h-64 rounded-full bg-purple-600 bg-opacity-10 blur-3xl -top-20 -left-20"></div>
         <div ref={parallaxRef2} className="parallax absolute w-96 h-96 rounded-full bg-purple-900 bg-opacity-30 blur-3xl bottom-0 right-0"></div>
@@ -56,7 +55,6 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 z-10 py-20 parallax-layer-base">
         <div className="max-w-4xl mx-auto text-center">
-          {/* A/B Test for headline */}
           <ABTestComponent 
             testName="heroHeadline"
             renderA={() => (
@@ -82,7 +80,6 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10 slide-in-from-bottom animation-delay-3000">
-            {/* A/B Test for CTA button */}
             <ABTestComponent
               testName="ctaButton"
               renderA={() => (
@@ -112,14 +109,6 @@ const Hero = () => {
             >
               Get in Touch
             </a>
-          </div>
-          
-          {/* Scroll indicator - hidden */}
-          <div className="hidden">
-            <span className="text-sm text-gray-400 mb-2">Scroll to Explore</span>
-            <div className="h-10 w-6 border-2 border-white rounded-full flex justify-center">
-              <ChevronDown className="h-4 w-4 text-white animate-bounce mt-2" />
-            </div>
           </div>
         </div>
       </div>
